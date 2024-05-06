@@ -8,11 +8,11 @@ return a float.
 Use the time module to measure an approximate elapsed time.
 """
 
-wait_n = __import__("1-concurrent_coroutines").wait_n
 import asyncio
 import time
 from typing import List
 from random import randint
+wait_n = __import__("1-concurrent_coroutines").wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
