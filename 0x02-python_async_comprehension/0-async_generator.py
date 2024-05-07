@@ -7,9 +7,10 @@ Use the random module.
 """
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """
     coroutine called async_generator that takes no arguments.
     The coroutine will loop 10 times, each time asynchronously
